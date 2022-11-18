@@ -8,7 +8,7 @@ import {
 
 import {API_URL} from '../support/constants'
 
-describe('Distillery excercise: Invalid SignIn', () => {
+describe('Test Login fail with Invalid Email and Password', () => {
     before( () => {
         cy.intercept('GET',API_URL.GOOGLE_API_MAPS_URL).as('googleApi')
         cy.intercept('POST',API_URL.SCORPION_OAUTH_URL).as('oauth')
